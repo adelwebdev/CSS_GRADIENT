@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  font-family: 'Saira Stencil One', cursive;
+}
+.container {
+  margin: auto;
+  position: relative;
+  height: 130px;
+  width: 550px;
+  overflow: hidden;
+}
+h1, .gradient {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 5rem;
+  letter-spacing: .5rem;
+  padding-left: 4px;
+  z-index: 1;
+  color: white;
+  background: black;
+  mix-blend-mode: multiply;
+  width: 90%;
+}
+.gradient {
+  height: 130px;
+  width: 300%;
+  background: linear-gradient(90deg, rgb(255, 145, 0), rgb(245, 99, 2), rgb(250, 186, 10), rgb(224, 240, 8), rgb(152, 245, 4), rgb(52, 245, 4), rgb(4, 245, 104), rgb(4, 245, 233), rgb(4, 169, 245), rgb(4, 96, 245), rgb(4, 40, 245));
+  animation: gradient 2s linear 1s infinite alternate;
+}
+@keyframes gradient {
+  0% {
+		transform: translate(-25%, -50%);
+	}
+	100% {
+    transform: translate(-75%, -50%);
+	}
+}
